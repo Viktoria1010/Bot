@@ -1,0 +1,254 @@
+{
+  "themes": {
+    "articles": {
+      "name": "Артикли",
+      "call_back": "articles",
+      "questions": [
+        {
+          "task": "Заполните пропуск:",
+          "question":["This is ... pen.","That is ... pencil.","This is ... book.","It is my ... book.", "Is this your ... pencil?",
+          "No, it isn't my ... pencil", "It is my sister's ... pencil.", "I have ... sister", "This is ... girl.",
+          "Their daughter's ... name is Vera.", "That is ... boy.", "Her brother's ... name is Nick.", "This is our ... flat.",
+          "We have got ... car", "Our ... car is not very expensive."],
+          "answer": ["a", "a", "a", "_", "_", "_", "_", "a", "a", "_", "a", "_", "_", "a", "_"],
+          "help": "Перед каждым нарицательным существительным должен стоять артикль. \nАртикль не употребляется, если перед существительным стоит: \n1)притяжательное или указательное местоимение, \n2)другое существительное в притяжательном падеже, \n3)количественное числительное, \n4)отрицание no (не not!)."
+
+        },
+        {
+          "task": "Заполните пропуск:",
+          "question": ["He hasn't got ... car.", "1. He's got ... computer.", "2. ... computer is new.",
+            "1. His friends have got ... cat and ... dog.", "2. ... dog never bites ... cat.", "1. This is ... tree.",
+            "2. ... tree is green.", "1. I can see three ... boys.", "2. ... boys are playing.", "1. I have ... bicycle.",
+            "2. ... bicycle is black.", "Our ... room is large.", "1. We wrote ... dictation yesterday.",
+            "2. ... dictation was long.", "This ... pencil is broken.", "Give me that ... pencil, please.",
+            "1. She has ... ball.", "2. ... ball is big." ],
+          "answer":["a", "a", "the", "a","the", "a", "the", "_", "the", "a", "the", "_", "a", "the", "_", "_", "a", "the"],
+          "help": "Упоминая предмет впервые, мы употребляем перед ним неопределённый артикль а (an). Упоминая же этот предмет вторично, мы ставим перед ним определённый артикль the."
+        },
+        {
+          "task": "Заполните пропуск:",
+          "question": ["1. This is ... pen.", "2. ... pen is red.", "These are pencils. ... pencils are black.",
+            "1. This is ... soup.", "2. ... soup is so tasty.", "In the morning I ate ... sandwich and ... cake.",
+            "1. She gave me ... coffee and ... cake.", "2. ... coffee was hot.", "3. ... cake was very tasty.",
+            "Do you need ... camera?", "1. This is ... pineapple.", "2. ... pineapple is delicious.",
+            "Elaine, ... apples are good for you!", "My ... cousin is upset.", "1. This is ... cottage cheese.",
+            "2. ... cottage cheese is fresh.", "1. This is ... bag.", "2. ... bag is brown.",
+            "3. It is my sister's ... bag.","4. And this is my ... bag.", "It is ... yellow."],
+          "answer": ["a", "the", "the", "_", "the", "a", "a", "the", "the", "a", "a", "the", "_", "_", "a", "the", "a",
+            "the", "_", "_", "_"],
+          "help": "Неопределённый артикль а(an) может употребляться только с исчисляемыми существительными, стоящими в единственном числе. \nПеред неисчисляемыми существительными или существительными во множественном числе неопределённый артикль опускается. \n\nОпределённый артикль the употребляется как с исчисляемыми, так и с неисчисляемыми существительными, как с единственным, так и со множественным числом."
+        }
+      ]
+    },
+    "nouns": {
+      "name": "Существительные",
+      "call_back": "nouns",
+      "call_help": "nouns_help",
+      "questions": [
+        {
+          "task": "Дайте соответствующее существительное женского рода:",
+          "options": "Я не знаю",
+          "question": ["a lion", "a tiger", "an actor", "a poet", "a man", "an uncle", "a husband", "a brother",
+            "a grandfather", "a son", "a master", "a baron", "a count", "a shepherd", "a host"],
+          "answer": ["a lioness", "a tigress", "an actress", "a poetess", "a woman", "an aunt", "a wife", "a sister",
+            "a grandmother", "a daughter", "a mistress", "a baroness", "a countess", "a shepherdess", "a hostess"],
+          "help": ""
+        }
+      ]
+    },
+    "comparison": {
+      "name": "Степени сравнения прилагательных",
+      "call_back": "comparison",
+      "call_help": "comparison_help",
+      "questions": [
+        {
+          "task": "Образуйте сравнительную степень:",
+          "options": "Я не знаю",
+          "question": ["hot", "long", "short", "clever", "silly", "great", "red", "black", "white", "thin", "thick",
+            "fat", "nice", "warm", "cold", "merry", "small", "tall", "high", "weak", "strong", "heavy", "light", "green",
+            "dry", "clean", "dirty", "wide", "deep", "brave"],
+          "answer": ["hotter", "longer", "shorter", "cleverer", "sillier", "greater", "redder","blacker", "whiter",
+            "thinner", "thicker", "fatter", "nicer", "warmer", "colder", "merrier", "smaller", "taller", "higher",
+            "weaker", "stronger", "heavier", "lighter", "greener", "drier", "cleaner", "dirtier", "wider", "deeper",
+            "braver"],
+          "help": "Сравнительная степень прилагательных образуется по следующим моделям: \n\n1)small - smaller \n2)big - bigger \n3)large - larger \n 4)happy - happier"
+        }
+      ]
+    },
+    "prepositions": {
+      "name": "Предлоги",
+      "call_back": "prepositions",
+      "call_help": "prepositions_help",
+      "questions": [
+        {
+          "task": "Заполните пропуск: ",
+          "question": ["Where is the book? — It is ... the table.", "Where is the tea? — It is ... the cup.",
+            "Put the plates ... the table.", "Put the book ... the bag.", "There is a beautiful picture ... the wall.",
+            "He went ... the room.", "Mother is cooking dinner ... the kitchen.", "There are many people ...the park today.",
+            "There is a girl standing ... the bridge", "There is no tea ... my cup.", "Pour some tea... my cup.",
+            "Put these flowers ... the windowsill.", "I saw many people ... the platform waiting for the train.",
+            "The teacher hung a picture ... the blackboard.", " I opened the door and went... the classroom.",
+            "The teacher was writing some words ... the blackboard."],
+          "answer": ["on", "in", "on", "into", "on", "into", "in", "in", "on", "in", "into", "on", "on", "on", "into",
+            "on"],
+          "help": ""
+        }
+      ]
+    },
+    "tenses":{
+      "name": "Использование времён",
+      "call_back": "tenses",
+      "call_help": "tenses_help",
+      "questions": [
+        {
+          "task": "Вставьте глагол to be в Present Simple:",
+          "options": "Я не знаю.",
+          "question": ["What ... your name? ", "My name ... Shirley Frank.", "What ... your address?",
+            "— My address ... 175 Grand Central Parkway.","What... your phone number?", "My phone number ... 718-1930.",
+            "Where ... you from?", "I ... from New York", "I ... a pupil.", "My father ... not a teacher.",
+            "... your aunt a doctor?", "Yes, she ...", "... they at home?", "No, they ... not at home.",
+            "My brother ...a worker.", "He ... at work","... you an engineer?","Yes, I ...","... your sister a typist?"],
+          "answer": ["is","is","is","is","is","is","are","am","am", "is","is","is","are","are","is","is","are","am","is"],
+          "help": ""
+        }
+      ]
+    },
+    "passive": {
+      "name": "Пассивный залог",
+      "call_back": "passive",
+      "call_help": "passive_help",
+      "questions": [
+        {
+          "task": "Раскройте скобки, употребляя глаголы в Present Simple Passive:",
+          "options": "Я не знаю.",
+          "question": ["The postbox (to empty) every day.","The stamps (to postmark) at the post office.",
+            "The letters (to sort) into the different towns","The mail (to load) into the train.","The mailbags (to unload) after their journey.",
+            "The bags (to take) to the post office", "The letters (to sort) into the different streets.", "The letters (to deliver)"],
+          "answer": ["is emptied", "are postmarked", "are sorted", "is loaded", "are unloaded","are taken","are sorted",
+          "are delivered"],
+          "help": ""
+        }
+      ]
+    },
+    "infinitive": {
+      "name": "Инфинитивы",
+      "call_back": "infinitive",
+      "questions": [
+        {
+          "task": "Вставьте частицу to перед инфинитивом, если необходимо:",
+          "question": ["I like ... dance.","I'd like ... dance.", "She made me ... repeat my words several times.",
+            "I saw him ... enter the room.", "She did not let her mother ... go away.", "Do you like ... listen to good music?",
+            "Would you like ... listen to good music?"],
+          "answer": ["to", "to", "_", "_", "_", "to", "to"],
+          "help": ""
+        }
+      ]
+    },
+    "participle":{
+      "name": "Причастие",
+      "call_back": "participle",
+      "questions": [
+        {
+          "task": "Выберите из скобок требующуюся форму причастия: ",
+          "question": ["The girl (writing/written) on the blackboard is our best student.",
+            "Everything (writing/written) here is quite right.", "We listened to the girls (singing/sung) Russian folk songs.",
+            "We listened to the Russian folk songs (singing/sung) by the girls.", "The dishes (washing/washed) by Kate looked very clean.",
+            "The boy (washing/washed) the dishes is mt brother.", "Who is that boy (doing/done) his homework at that table?",
+            "The exercises (doing/done) by the pupils were easy.", "The wall (surrounding/surrounded) the house was very high.",
+            "The house (surrounding/surrounded) by tall trees is lovely.", "Read the the (translating/translated) sentence once more.",
+            "Name some place (visiting/ visited) by you last year.", "I picked up the pencil (lying/lain) on the floor.",
+            "She was reading the book (buying/bought) the day before.", "Yesterday we were at a conference (organizing/organized) by the pupils of the 10th form.",
+            "(Taking/taken) the girl by the hand, she led her across the street.", "It was not easy to find the (losing/lost) stamp.",
+            "I shall show you a picture (painting/painted) by Hogarth.", "Here is the letter (receiving/received) by me yesterday.",
+            "Do you know the girl (playing/played) in the garden?", "The book (writing/written) by this scientist is very interesting.",
+            "Translate the words (writing/written) on the blackboard.", "We could not see the sun (covering/covered) by dark clouds.",
+            "The (loosing/lost) book was found at last.", "(Going/gone) along the street, I met Mary and Ann.",
+            "Look at the beautiful flowers (gathering/gathered) by the children.", "His hat (blowing/blown) off by the wind was lying in the middle of the street.",
+            "When he came nearer, we saw two boys (coming/come) to us.", "I think that the boy (standing/stood) there is his brother."],
+          "answer": ["writing","written", "singing", "sung", "washed", "washing", "doing", "done", "surrounding",
+            "surrounded",  "translated", "visited", "lying", "bought", "organized", "taking", "lost", "painted",
+            "received", "playing", "written", "written", "covered", "lost", "going", "gathered", "blown", "coming", "standing"],
+          "help": ""
+        }
+      ]
+    },
+    "gerund": {
+      "name": "Герундий",
+      "call_back": "gerund",
+      "questions": [
+        {
+          "task": "",
+          "options":"Я не знаю.",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    },
+    "complex object": {
+      "name": "Сложное дополнение",
+      "call_back": "complex object",
+      "questions": [
+        {
+          "task": "",
+          "options":"Я не знаю.",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    },
+    "complex subject": {
+      "name": "Сложное подлежащее",
+      "call_back": "complex subject",
+      "questions": [
+        {
+          "task": "",
+          "options": "Я не знаю.",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    },
+    "conditional": {
+      "name": "Условные предложения",
+      "call_back": "conditional",
+      "questions": [
+        {
+          "options": "Я не знаю.",
+          "task": "",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    },
+    "wish": {
+      "name": "Коснтрукция 'I wish'",
+      "call_back": "wish",
+      "questions": [
+        {
+          "task": "",
+          "options": "Я не знаю.",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    },
+    "modal":{
+      "name": "Модальные глаголы",
+      "call_back": "modal",
+      "questions": [
+        {
+          "task": "",
+          "options": "Я не знаю.",
+          "question": [],
+          "answer": [],
+          "help": ""
+        }
+      ]
+    }
+  }
+}
