@@ -5,28 +5,28 @@
       "call_back": "articles",
       "questions": [
         {
-          "task": "Заполните пропуск:",
+          "task": "Заполните пропуск.",
           "question":["This is ... pen.","That is ... pencil.","This is ... book.","It is my ... book.", "Is this your ... pencil?",
           "No, it isn't my ... pencil", "It is my sister's ... pencil.", "I have ... sister", "This is ... girl.",
           "Their daughter's ... name is Vera.", "That is ... boy.", "Her brother's ... name is Nick.", "This is our ... flat.",
           "We have got ... car", "Our ... car is not very expensive."],
-          "answer": ["a", "a", "a", "_", "_", "_", "_", "a", "a", "_", "a", "_", "_", "a", "_"],
+          "answer": ["A", "A", "A", "_", "_", "_", "_", "A", "A", "_", "A", "_", "_", "A", "_"],
           "help": "Перед каждым нарицательным существительным должен стоять артикль. \nАртикль не употребляется, если перед существительным стоит: \n1)притяжательное или указательное местоимение, \n2)другое существительное в притяжательном падеже, \n3)количественное числительное, \n4)отрицание no (не not!)."
 
         },
         {
-          "task": "Заполните пропуск:",
+          "task": "Заполните пропуск.",
           "question": ["He hasn't got ... car.", "1. He's got ... computer.", "2. ... computer is new.",
             "1. His friends have got ... cat and ... dog.", "2. ... dog never bites ... cat.", "1. This is ... tree.",
             "2. ... tree is green.", "1. I can see three ... boys.", "2. ... boys are playing.", "1. I have ... bicycle.",
             "2. ... bicycle is black.", "Our ... room is large.", "1. We wrote ... dictation yesterday.",
             "2. ... dictation was long.", "This ... pencil is broken.", "Give me that ... pencil, please.",
             "1. She has ... ball.", "2. ... ball is big." ],
-          "answer":["a", "a", "the", "a","the", "a", "the", "_", "the", "a", "the", "_", "a", "the", "_", "_", "a", "the"],
+          "answer":["A", "A", "The", "A","The", "A", "The", "_", "The", "A", "The", "_", "A", "The", "_", "_", "A", "The"],
           "help": "Упоминая предмет впервые, мы употребляем перед ним неопределённый артикль а (an). Упоминая же этот предмет вторично, мы ставим перед ним определённый артикль the."
         },
         {
-          "task": "Заполните пропуск:",
+          "task": "Заполните пропуск.",
           "question": ["1. This is ... pen.", "2. ... pen is red.", "These are pencils. ... pencils are black.",
             "1. This is ... soup.", "2. ... soup is so tasty.", "In the morning I ate ... sandwich and ... cake.",
             "1. She gave me ... coffee and ... cake.", "2. ... coffee was hot.", "3. ... cake was very tasty.",
@@ -34,8 +34,8 @@
             "Elaine, ... apples are good for you!", "My ... cousin is upset.", "1. This is ... cottage cheese.",
             "2. ... cottage cheese is fresh.", "1. This is ... bag.", "2. ... bag is brown.",
             "3. It is my sister's ... bag.","4. And this is my ... bag.", "It is ... yellow."],
-          "answer": ["a", "the", "the", "_", "the", "a", "a", "the", "the", "a", "a", "the", "_", "_", "a", "the", "a",
-            "the", "_", "_", "_"],
+          "answer": ["A", "The", "The", "_", "The", "A", "A", "The", "The", "A", "A", "The", "_", "_", "A", "The", "A",
+            "The", "_", "_", "_"],
           "help": "Неопределённый артикль а(an) может употребляться только с исчисляемыми существительными, стоящими в единственном числе. \nПеред неисчисляемыми существительными или существительными во множественном числе неопределённый артикль опускается. \n\nОпределённый артикль the употребляется как с исчисляемыми, так и с неисчисляемыми существительными, как с единственным, так и со множественным числом."
         }
       ]
@@ -43,15 +43,37 @@
     "nouns": {
       "name": "Существительные",
       "call_back": "nouns",
-      "call_help": "nouns_help",
       "questions": [
         {
-          "task": "Дайте соответствующее существительное женского рода:",
-          "options": "Я не знаю",
-          "question": ["a lion", "a tiger", "an actor", "a poet", "a man", "an uncle", "a husband", "a brother",
-            "a grandfather", "a son", "a master", "a baron", "a count", "a shepherd", "a host"],
-          "answer": ["a lioness", "a tigress", "an actress", "a poetess", "a woman", "an aunt", "a wife", "a sister",
-            "a grandmother", "a daughter", "a mistress", "a baroness", "a countess", "a shepherdess", "a hostess"],
+          "task": "Дайте соответствующее существительное женского рода.",
+          "question": ["A lion", "A tiger", "An actor", "A poet", "A man", "An uncle", "A husband", "A brother",
+            "A grandfather", "A son", "A master", "A baron", "A count", "A shepherd", "A host"],
+          "answer": ["A lioness", "A tigress", "An actress", "A poetess", "A woman", "An aunt", "A wife", "A sister",
+            "A grandmother", "A daughter", "A mistress", "A baroness", "A countess", "A shepherdess", "A hostess"],
+          "help": "Самым распространенным суффиксом, образующим существительное женского рода, является -ess.\n\nИсключения: \nman – woman (мужчина – женщина)\nhusband – wife (муж – жена)\nfather – mother (отец – мать)\nbrother – sister (брат – сестра)\nson – daughter (сын – дочь)\nuncle – aunt (дядя – тетя)."
+        },
+        {
+          "task": "Поставьте существительное во множественное число (не забудьте, что неопределённый артикль нужно опустить).",
+          "question": ["A pen", "A class", "A story", "A road", "A day", "A cat", "A bush", "A desk", "A table", "A plate",
+            "A fox", "A room", "A lady", "A knife", "A chair", "A bus", "A hero", "A match", "A way", "A house", "A family",
+            "A flag", "A town", "A wolf", "A country", "A lion", "A park", "A play", "A dictionary", "A thief", "A key"],
+          "answer": ["Pens", "Classes", "Stories", "Roads", "Days", "Cats", "Bushes", "Desks", "Tables", "Plates", "Foxes",
+            "Rooms", "Ladies", "Knives", "Chairs", "Buses", "Heroes", "Matches", "Ways", "Houses", "Families", "Flags",
+            "Towns", "Wolves", "Countries", "Loins", "Parks", "Plays", "Dictionaries", "Thieves", "Keys"],
+          "help": ""
+        },
+        {
+          "task": "Поставьте существительное во множественное число (не забудьте, что неопределённый артикль нужно опустить, а определённый опускать не нужно).",
+          "question": ["A baby", "A plant", "A lemon", "A peach", "A banana", "A brush", "A star", "A mountain", "A tree",
+            "A shilling", "A king", "The waiter", "The queen", "A man", "The man", "A woman", "The woman", "An eye", "A shelf",
+            "A box", "The city", "A boy", "A goose", "The watch", "A mouse", "A dress", "A toy", "The sheep", "A tooth",
+            "A child", "The ox", "A deer", "The life", "A tomato", "A secretary", "A crowd", "The airport", "A theatre",
+            "The tornado", "A shop", "The tragedy"],
+          "answer": ["Babies", "Plants", "Lemons", "Peaches", "Bananas", "Brushes", "Stars", "Mountains", "Trees",
+            "Shillings", "Kings", "The waiters", "The queens", "Men", "The men", "Women", "The women", "Eyes", "Shelves",
+            "Boxes", "The cities", "Boys", "Geese", "The watches", "Mice", "Dresses", "Toys", "The sheep", "Teeth",
+            "Children", "The oxen", "Deer", "The lives", "Tomatoes", "Secretaries", "Crowds", "The airports", "Theatres",
+            "The tornadoes", "Shops", "The tragedies"],
           "help": ""
         }
       ]
@@ -59,56 +81,191 @@
     "comparison": {
       "name": "Степени сравнения прилагательных",
       "call_back": "comparison",
-      "call_help": "comparison_help",
       "questions": [
         {
-          "task": "Образуйте сравнительную степень:",
-          "options": "Я не знаю",
-          "question": ["hot", "long", "short", "clever", "silly", "great", "red", "black", "white", "thin", "thick",
-            "fat", "nice", "warm", "cold", "merry", "small", "tall", "high", "weak", "strong", "heavy", "light", "green",
-            "dry", "clean", "dirty", "wide", "deep", "brave"],
-          "answer": ["hotter", "longer", "shorter", "cleverer", "sillier", "greater", "redder","blacker", "whiter",
-            "thinner", "thicker", "fatter", "nicer", "warmer", "colder", "merrier", "smaller", "taller", "higher",
-            "weaker", "stronger", "heavier", "lighter", "greener", "drier", "cleaner", "dirtier", "wider", "deeper",
-            "braver"],
-          "help": "Сравнительная степень прилагательных образуется по следующим моделям: \n\n1)small - smaller \n2)big - bigger \n3)large - larger \n 4)happy - happier"
+          "task": "Образуйте сравнительную степень.",
+          "question": ["Hot", "Long", "Short", "Clever", "Silly", "Great", "Red", "Black", "White", "Thin", "Thick",
+            "Fat", "Nice", "Warm", "Cold", "Merry", "Small", "Tall", "High", "Weak", "Strong", "Heavy", "Light", "Green",
+            "Dry", "Clean", "Dirty", "Wide", "Deep", "Brave"],
+          "answer": ["Hotter", "Longer", "Shorter", "Cleverer", "Sillier", "Greater", "Redder","Blacker", "Whiter",
+            "Thinner", "Thicker", "Fatter", "Nicer", "Warmer", "Colder", "Merrier", "Smaller", "Taller", "Higher",
+            "Weaker", "Stronger", "Heavier", "Lighter", "Greener", "Drier", "Cleaner", "Dirtier", "Wider", "Deeper",
+            "Braver"],
+          "help": "Сравнительная степень одно- и двусложных прилагательных образуется по следующим моделям:\n1)Small - smaller \n2)Big - bigger \n3)Large - larger \n4)Happy - happier."
+        },
+        {
+          "task": "Образуйте превосходную степень (не забывайте про определённый артикль перед ней).",
+          "question": ["Hot", "Long", "Short", "Clever", "Silly", "Great", "Red", "Black", "White", "Thin", "Thick",
+            "Fat", "Nice", "Warm", "Cold", "Merry", "Small", "Tall", "High", "Weak", "Strong", "Heavy", "Light", "Green",
+            "Dry", "Clean", "Dirty", "Wide", "Deep", "Brave"],
+          "answer": ["The hottest", "The longest", "The shortest", "The cleverest", "The silliest", "The greatest",
+            "The reddest", "The blackest", "The whitest", "The thinnest", "The thickest", "The fattest", "The nicest",
+            "The warmest", "The coldest", "The merriest", "The smallest", "The tallest", "The highest", "The weakest",
+            "The strongest", "The heaviest", "The lightest", "The greenest", "The driest", "The cleanest",
+            "The dirtiest", "The widest", "The deepest", "The bravest"],
+          "help": "Превосходная степень одно- и двусложных прилагательных образуется по следующим моделям:\n1)Small - the smallest \n2)Big - the biggest \n3)Large - the larger \n4)Happy - the happiest."
+        },
+        {
+          "task": "Раскройте скобки, употребив нужную форму прилагательного.",
+          "question": ["The rivers in America are much (big) than those in England", "The island of Great Britain is (small) than Greenland.",
+            "What is the name of (high) mountain in Asia?", "The English Channel is (wide) than the Strait of Gibraltar.",
+            "Russia is a very (large) country.", "Which is (large): the United States or Canada?", "Moscow is (large) city in Russia.",
+            "The London Underground is (old) in the world.", "There is a (great) number of cars and buses in the streets of Moscow than in any other city of Russia.",
+            "St Petersburg is one of (beautiful) cities in the world."],
+          "answer": ["Bigger", "Smaller", "The highest", "Wider", "Large", "Larger", "The largest", "The oldest", "Greater", "The most beautiful"],
+          "help": "Сравнительная и превосходная степень многосложный прилагательных образуются по следующей модели:\nInteresting (прилагательное) - more interesting (сравнительная степень) - the most interesting (превосходная степень)."
+        },
+        {
+          "task": "Раскройте скобки, употребив нужную форму прилагательного.",
+          "question": ["We should eat (healthy) food.", "Today the streets aren't as (clean) as they used to be.",
+            "It's (bad) mistake he has ever made.", "This man is (tall) than that one.", "Asia is (large) than Australia.",
+            "The Volga is (short) than the Mississippi.", "Which building is (high) in Moscow?",
+            "Mary is a (good) student than Lucy.", "The Alps are (high) than the Urals.", "This garden is (beautiful) in our town.",
+            "She speaks Italian (good) than English.", "The Thames is (short) than the Volga.", "The Arctic Ocean is (cold) than the Indian Ocean.",
+            "Chinese is (difficult) than English.", "Spanish is (easy) than German.", "She is not so (busy) as I am.",
+            "It is as (cold) today as it was yesterday.", "She is not so (fond) of sports as my brother is.",
+            "Today the weather is (cold) than it was yesterday.", "This book is (interesting) of all I have read this year.",
+            "January is (cold) month of the year.","My sister speaks English (bad) than I do.", "Which is the (hot) month of the year?",
+            "Which is the (beautiful) place in this part of the country?", "This good-looking girl is (good) student is our group."],
+          "answer": ["Healthier", "Clean", "The worst", "Taller", "Larger", "Shorter", "The highest", "Better", "Higher",
+            "The most beautiful", "Better", "Shorter", "Colder", "More difficult", "Easier", "Busy", "Cold", "Fond", "Colder",
+            "The most interesting", "The coldest", "Worse", "The hottest", "The most beautiful", "The best"],
+          "help": "Запомните:\n1)as (прилагательное) as - такой же ... как\n2)not as/so (прилагательное) as - не такой же ... как.\n\nОсобые случаи образования степеней сравнения:\n1)Old - older - the oldest;old - elder - the eldest (употребляется, когда говорим о детях одной семьи)\n2)Far - farther - the farthest\n3)Good - better - the best\n4)Bad - worse - the worst"
+        },
+        {
+          "task": "Раскройте скобки, употребив нужную форму прилагательного.",
+          "question": ["Her eyes are (grey) than my.", "He was the (fat) man in the village.", "My sister is (tall) girl in her class.",
+            "Who is (attentive) student in your group?", "This is (beautiful) view I have ever seen in my life.",
+            "1. Your handwriting is now (good) than it was last year.", "2. But still it is not as (good) as Nick's handwriting.",
+            "3. Nick has a (good) handwriting than you.", "4. And of course Nellie has (good) handwriting of all.",
+            "Oil is (light) than water.", "We shall wait for a (dry) day to go on the excursion.", "A bus is (fast) than a tram.",
+            "1. Take some of these sweets: they are very (nice).", "2. They are (nice) than the sweets in that box.",
+            "(tall) trees in the world grow in California.", "Please be (careful) next time and don't spill the milk again.",
+            "1. Bobby was a (quiet) child.", "2. He was (quiet) than his sister.", "My pie is (delicious)."],
+          "answer": ["Greyer", "The fattest", "The tallest", "The most attentive", "The most beautiful", "Better", "Good",
+            "Better", "The best", "Lighter", "Drier", "Faster", "Nice", "Nicer", "The tallest", "More careful", "Quiet",
+            "Quieter", "Delicious"],
+          "help": "Сравнительная степень одно- и двусложных прилагательных образуется по следующим моделям:\n1)Small - smaller - the smallest \n2)Big - bigger - the biggest\n3)Large - larger - the largest\n4)Happy - happier - the happiest.\n\nСравнительная и превосходная степень многосложный прилагательных образуются по следующей модели:\nInteresting (прилагательное) - more interesting (сравнительная степень) - the most interesting (превосходная степень)."
         }
       ]
     },
     "prepositions": {
       "name": "Предлоги",
       "call_back": "prepositions",
-      "call_help": "prepositions_help",
       "questions": [
         {
-          "task": "Заполните пропуск: ",
+          "task": "Вствьте предлоги in, on, into.",
           "question": ["Where is the book? — It is ... the table.", "Where is the tea? — It is ... the cup.",
             "Put the plates ... the table.", "Put the book ... the bag.", "There is a beautiful picture ... the wall.",
             "He went ... the room.", "Mother is cooking dinner ... the kitchen.", "There are many people ...the park today.",
             "There is a girl standing ... the bridge", "There is no tea ... my cup.", "Pour some tea... my cup.",
             "Put these flowers ... the windowsill.", "I saw many people ... the platform waiting for the train.",
             "The teacher hung a picture ... the blackboard.", " I opened the door and went... the classroom.",
-            "The teacher was writing some words ... the blackboard."],
-          "answer": ["on", "in", "on", "into", "on", "into", "in", "in", "on", "in", "into", "on", "on", "on", "into",
-            "on"],
-          "help": ""
+            "The teacher was writing some words ... the blackboard.", "The teacher hung a picture ... the blackboard.",
+            "1. I opened the door and went ... the classroom.", "2. The teacher was writing some words ... the blackboard.",
+            "3. The pupils were writing these words ... their notebooks.", "There were some books and pens ... the teacher's table.",
+            "1. I saw a pen ... the floor.", "2. I picked it up and put it ... the table."],
+          "answer": ["On", "In", "On", "Into", "On", "Into", "In", "In", "On", "In", "Into", "On", "On", "On", "Into",
+            "On", "On", "Into", "On", "In", "On", "On", "On"],
+          "help": "Полезно запомнить следующие сочетания:\n1) Где? На столе - on the table.\n2) Где? В комнате - in the room.\n3) Куда? На стол - on the table.\n4) Куда? В комнату - into the room."
+        },
+        {
+          "task": "Вставьте предлоги in, to.",
+          "question": ["1. In winter I usually go ... bed at ten o'clock.", "2. Because I go ... school and have to get up early.",
+            "Do you like to read ... bed?", "It is very late. Go ... bed at once.", "1. My little sister is ... bed.",
+            "2. Mother always puts her ... bed at eight o'clock.", "1. In summer my mother does not go ... work.",
+            "2. And I don't go ... school.", "3. We live ... the country.", "4. My father goes ... work every day.",
+            "5. So he stays ... town.", "6. But sometimes he comes ... the country after the work."],
+          "answer": ["To", "To", "In", "To", "In", "To", "To", "To", "In", "To", "In", "To"],
+          "help": "Полезно запомнить следующие сочетания:\n1) Где? В постели - in bed.\n2) Куда? В постель - to bed (обратите внимание на отсутствие артикля в этих словосочетаниях)."
         }
       ]
     },
     "tenses":{
       "name": "Использование времён",
       "call_back": "tenses",
-      "call_help": "tenses_help",
       "questions": [
         {
-          "task": "Вставьте глагол to be в Present Simple:",
-          "options": "Я не знаю.",
-          "question": ["What ... your name? ", "My name ... Shirley Frank.", "What ... your address?",
-            "— My address ... 175 Grand Central Parkway.","What... your phone number?", "My phone number ... 718-1930.",
-            "Where ... you from?", "I ... from New York", "I ... a pupil.", "My father ... not a teacher.",
-            "... your aunt a doctor?", "Yes, she ...", "... they at home?", "No, they ... not at home.",
-            "My brother ...a worker.", "He ... at work","... you an engineer?","Yes, I ...","... your sister a typist?"],
-          "answer": ["is","is","is","is","is","is","are","am","am", "is","is","is","are","are","is","is","are","am","is"],
+          "task": "Вставьте глагол to be в Present Simple.",
+          "question": ["1. What ... your name? ", "2. My name ... Shirley Frank.", "1. What ... your address?",
+            "2. My address ... 175 Grand Central Parkway.","1. What... your phone number?", "2. My phone number ... 718-1930.",
+            "1. Where ... you from?", "2. I ... from New York", "I ... a pupil.", "My father ... not a teacher.",
+            "1. ... your aunt a doctor?", "2. Yes, she ...", "1. ... they at home?", "2. No, they ... not at home.",
+            "1. My brother ... a worker.", "2. He ... at work","1. ... you an engineer?","2. Yes, I ...",
+            "1. ... your sister a typist?", "2. No, she ... not a typist.", "3. She ... a student.",
+            "1. ... your brother at school?", "2. Yes, he ...", "1. ... your sister at school?", "2. No, she ... not at school.",
+            "My sister ... at home.", "1. ... this your watch?", "2. Yes, it ...", "She ... an actress.", "This ... my bag.",
+            "My uncle ... an office worker.", "He ... at work.", "1. Helen ... a painter.", "2. Her pictures ... on the walls.",
+            "3. She has so much paper. It ... on the shelf.", "4. The shelf ... brown.", "5. It ... om the wall.",
+            "6. Helen has a brother. He ... a student.", "7. He has a family. His wife ... not from St Petersburg.",
+            "8. She ... from Moscow.", "9. They ... nice people."],
+          "answer": ["Is","Is","Is","Is","Is","Is","Are","Am","Am","Is","Is","Is","Are","Are","Is","Is","Are","Am","Is"],
+          "help": "Используя это время, люди рассказывают о своих привычках и о других регулярных действиях, также о научных фактах и вещах, которые всегда правдивы.\n\nI am (not).\nHe/she/it is (not).\nWe/you/they are (not).\nAm I?\nIs he/she/it?\nAre we/you/they?"
+        },
+        {
+          "task": "Вставьте глагол to be в Past Simple.",
+          "question": ["1. My aunt ... very depressed last Sunday.", "2. The weather ... terrible.", "3. It ... cold and rainy.",
+            "4. Her husband ... not at home.", "5. He ... was at hospital because of the disease.", "6. Her children ... not at school.",
+            "7. They ... not in the yard.", "8. They ... in the living room.", "9. The TV ... broken.", "10. The children ... not only upset.",
+            "11. They ... angry.", "12. The neighbours ... not happy.", "13. Because her children ... too noisy.",
+            "14. The house ... not clean.", "15. The sink ... broken.", "16. There ... dirty dishes on the kitchen table and in the sink.",
+            "17. There ... nothing in the fridge.", "18. There ... no vegetables for dinner.", "19. There ... no juice for her children.",
+            "20. There ... not even bread in the house!", "21. She ... tired and hungry.", "22. She ... just exhausted."],
+          "answer": ["Was", "Was", "Was", "Was", "Was", "Were", "Were", "Were", "Was", "Were", "Were", "Were", "Were",
+            "Was", "Was", "Were", "Was", "Were", "Was", "Was", "Was", "Was"],
+          "help": "Время Past Simple используется для обозначения действия, которое произошло в определенное время в прошлом и время совершения которого уже истекло.\n\nI/he/she/it was (not).\nWe/you/they were (not).\nWas I/he/she/it?\nWere we/you/they?"
+        },
+        {
+          "task": "Вставьте глагол to be в Present Simple, Past Simple или Future Simple",
+          "question": ["The students ... in the Russian Museum.", "1. Last month they ... in the Hermitage.",
+            "2. There ... an interesting exhibition there.", "1. In two week they ... in the Tretyakov Art Gallery.",
+            "2. They ... lucky.", "My father ... a teacher.", "He ... a pupil twenty years ago.", "I ... a doctor when I grow up",
+            "She ... at school tomorrow.", "... your father at work yesterday?", "1. My sister ... ill last week.",
+            "2. She ... not ill now.", "Yesterday we ... at the theatre.", "1. Where ... you mother now?", "2. She ... in the living room.",
+            "1. Where ... you yesterday?", "2. I ... at the cinema.", "When I come home tomorrow, all my family ... at home.",
+            "1. ... your little sister in bed now?", "2. Yes, she ...", "1. ... at school tomorrow?", "2. Yes, I ...",
+            "My friend ... in Moscow now.", "He ... in St Petersburg tomorrow.", "1. Where ... your books now?",
+            "2. They ... in my bag.", "1. Where ... your friends?", "2. They ... at the stadium.", "1. What colour ... your notebook?",
+            "2. It ... black.", "The library ... on the right."],
+          "answer": ["Are", "Were", "Was", "Will be", "Are", "Is", "Was", "Will be", "Will be", "Was", "Was", "Is", "Were",
+            "Is", "Is", "Were", "Was", "Will be", "Is", "Is", "Will you be", "Will", "Is", "Will be", "Are", "Are", "Are",
+            "Are", "Is", "Is", "Is"],
+          "help": "Время Future Simple ссылается на действие, которое совершится в неопределенном или отдаленном будущем.\n\nI/he/she/it/we/you/they will (not) be.\nWill I/he/she/it/we/you/they be?"
+        },
+        {
+          "task": "Раскройте скобки, употребляя глаголы в Present Continuous.",
+          "question": ["Timothy (to feed) his dog.", "Mr Jones (to clean) his yard.", "Nancy (to paint) her kitchen.",
+            "Our neighbours (to wash) their car.", "I (to wash) my hair.", "Who (to fix) your your sink?", "1. What she (to do) now?",
+            "2. She (to dance).", "The children (to brush) their teeth.", "1. What he (to do) at the moment?", "2. He (to fix) his bicycle.",
+            "They (to have) a big dinner together.", "The boys (to run) about in the garden.", "I (to do) my homework.",
+            "John and his friends (to go) to the library.", "1. Ann (to sit) at her desk.", "2. She (to study) geography.",
+            "1. A young man (to stand) at the window.", "2. He (to smoke) a cigarette.", "The old man (to walk) about the room.",
+            "The dog (to lie) on the floor."],
+          "answer": ["Is feeding", "Is cleaning", "Is painting", "Are washing", "Am washing", "Is fixing?", "Is she doing?",
+            "Is dancing", "Are brushing", "Is he doing", "Is fixing", "Are having", "Are running", "Am doing", "Are going",
+            "Is sitting", "Is studying", "Is standing", "Is smoking", "Is walking", "Is lying"],
+          "help": "Время Present Continuous употребляется когда действие в процессе и совершается в тот момент, когда о нём говорят. \n\nI/he/she/it/we/you/they + to be (am/is/are) + ing-форма глагола (doing/working и т.д.)\nВопрос: To be + местоимение + ing-форма глагола?"
+        },
+        {
+          "task": "Раскройте скобки, употребляя глаголы в Present Simple.",
+          "question": ["1. My working day (to begin) at seven o'clock.", "2. I (to get up).", "3. I (to switch) on he radio.",
+            "4. And (to do) my morning exercises.", "5. It (to take) me fifteen minutes.", "6. At half past seven we (to have) breakfast.",
+            "7. My father and I (to leave) home at eight o'clock.", "8. He (to take) a bus to his factory.", "9. My mom (to be) a doctor.",
+            "10. She (to leave) home at nine o'clock.", "11. In the we (to gather) in the living room.", "12. We (to watch) TV.",
+            "13. And (to talk).", "1. My sister (to get) up at eight o'clock.", "2. She (to be) a schoolgirl.",
+            "3. She (to go) to school in the afternoon.", "1. Jane (to be) fond of sports.", "2. She (to do) her morning exercises every day.",
+            "3. For breakfast she (to have) two eggs, a sandwich and a cup of tea.", "4. After breakfast she (to go) to school.",
+            "5. It (to take) her two hours to do her homework.", "6. She (to speak) French well."],
+          "answer": ["Begins", "Get up", "Switch", "Do", "Takes", "Have", "Leave", "Takes", "Is","Leaves", "Gather",
+            "Watch", "Talk", "Gets", "Is", "Goes", "Is", "Does", "Has", "Goes", "Takes", "Speaks"],
+          "help": "Используя это время, люди рассказывают о своих привычках и о других регулярных действиях, также о научных фактах и вещах, которые всегда правдивы.\n\nI/we/you/they work\nHe/she/it works.\nI/we/you/they do not work.\nHe/she/it does not work.\nDo I/we/you/they work?\nDoes he/she/it work?"
+        },
+        {
+          "task": "Раскройте скобки, употребляя глаголы в Present Simple или Present Continuous.",
+          "question": ["1. He (to work) in the centre of Chicago.", "2. He (to work) in the centre of Chicago?",
+            "3. He (not to work) in the centre of Chicago.", "1. They (to read) a lot of books.", "2. They (to read) many book?",
+            "3. "],
+          "answer": [],
           "help": ""
         }
       ]
@@ -116,17 +273,36 @@
     "passive": {
       "name": "Пассивный залог",
       "call_back": "passive",
-      "call_help": "passive_help",
       "questions": [
         {
-          "task": "Раскройте скобки, употребляя глаголы в Present Simple Passive:",
-          "options": "Я не знаю.",
+          "task": "Раскройте скобки, употребляя глаголы в Present Simple Passive.",
           "question": ["The postbox (to empty) every day.","The stamps (to postmark) at the post office.",
             "The letters (to sort) into the different towns","The mail (to load) into the train.","The mailbags (to unload) after their journey.",
             "The bags (to take) to the post office", "The letters (to sort) into the different streets.", "The letters (to deliver)"],
-          "answer": ["is emptied", "are postmarked", "are sorted", "is loaded", "are unloaded","are taken","are sorted",
-          "are delivered"],
-          "help": ""
+          "answer": ["Is emptied", "Are postmarked", "Are sorted", "Is loaded", "Are unloaded","Are taken","Are sorted",
+          "Are delivered"],
+          "help": "Пассивный залог широко употребляется как в устном так и в письменном  современном английском. Зачастую пассивные конструкции используются, когда нет необходимости называть исполнителя какого-либо действия, а также, если нет разницы в том, кто именно это действие выполняет — важен лишь результат.\n\nPassive voice = to be (am/is/are в данном случае) + третья форма глагола."
+        },
+        {
+          "task": "Раскройте скобки, употребляя глаголы в Past Simple Passive.",
+          "question": ["The postbox (to empty) yesterday.","The stamps (to postmark) at the post office.",
+            "The letters (to sort) into the different towns","The mail (to load) into the train.","The mailbags (to unload) after their journey.",
+            "The bags (to take) to the post office", "The letters (to sort) into the different streets.", "The letters (to deliver)."],
+          "answer": ["Was emptied", "Were postmarked", "Were sorted", "Was loaded", "Were unloaded","Were taken","Were sorted",
+          "Were delivered"],
+          "help": "Passive voice = to be (was/were в данном случае) + третья форма глагола."
+        },
+        {
+           "task": "Раскройте скобки, употребляя глаголы в Future Simple Passive.",
+          "question": ["The postbox (to empty) yesterday.","The stamps (to postmark) at the post office.",
+            "The letters (to sort) into the different towns","The mail (to load) into the train.","The mailbags (to unload) after their journey.",
+            "The bags (to take) to the post office", "The letters (to sort) into the different streets.", "The letters (to deliver)."],
+          "answer": ["Will be emptied", "Will be postmarked", "Will be sorted", "Will be loaded", "Will be unloaded","Will be taken","Will be sorted",
+          "Will be delivered"],
+          "help": "Passive voice = to be + третья форма глагола."
+        },
+        {
+
         }
       ]
     },
@@ -135,12 +311,16 @@
       "call_back": "infinitive",
       "questions": [
         {
-          "task": "Вставьте частицу to перед инфинитивом, если необходимо:",
+          "task": "Вставьте частицу to перед инфинитивом, если необходимо. Если частица не нужна, отправьте '_'.",
           "question": ["I like ... dance.","I'd like ... dance.", "She made me ... repeat my words several times.",
             "I saw him ... enter the room.", "She did not let her mother ... go away.", "Do you like ... listen to good music?",
-            "Would you like ... listen to good music?"],
-          "answer": ["to", "to", "_", "_", "_", "to", "to"],
-          "help": ""
+            "Would you like ... listen to good music?", "That funny scene made me ... laugh.", "I like ... play the guitar.",
+            "My brother can ... speak French.", "We had ... put on our overcoats because it was cold.", "They wanted ... cross the river.",
+            "It is high time for you ... go to bed.", "May I ... use your telephone?", "I would rather ... stay at home today.",
+            "He didn't want ... play in the yard.", "Would you like ... go to England?", "You had better ... go home.",
+            "It is time ... get up.", "Let me ... help you with your homework."],
+          "answer": ["To", "To", "_", "_", "_", "To", "To", "_", "To", "_", "To", "To", "To", "_", "_", "To", "To", "_", "To", "_"],
+          "help": "Инфинитив употребляется без частицы 'to':\n1. После модальных глаголов;\n2. После глаголов to let, to make;\n3. В сложном предложении после глаголов восприятия (to see, to hear, to feel, etc.);4. После выражений would rather/had better."
         }
       ]
     },
@@ -165,10 +345,10 @@
             "The (loosing/lost) book was found at last.", "(Going/gone) along the street, I met Mary and Ann.",
             "Look at the beautiful flowers (gathering/gathered) by the children.", "His hat (blowing/blown) off by the wind was lying in the middle of the street.",
             "When he came nearer, we saw two boys (coming/come) to us.", "I think that the boy (standing/stood) there is his brother."],
-          "answer": ["writing","written", "singing", "sung", "washed", "washing", "doing", "done", "surrounding",
-            "surrounded",  "translated", "visited", "lying", "bought", "organized", "taking", "lost", "painted",
-            "received", "playing", "written", "written", "covered", "lost", "going", "gathered", "blown", "coming", "standing"],
-          "help": ""
+          "answer": ["Writing","Written", "Singing", "Sung", "Washed", "Washing", "Doing", "Done", "Surrounding",
+            "Surrounded",  "Translated", "Visited", "Lying", "Bought", "Organized", "Taking", "Lost", "Painted",
+            "Received", "Playing", "Written", "Written", "Covered", "Lost", "Going", "Gathered", "Blown", "Coming", "Standing"],
+          "help": "Причастие – это неличная форма английского глагола, которая обладает свойствами глагола, наречия и прилагательного.\n\nУпотребление Participle I(ing-форма) и Participle II(3-я форма глагола):\n1. Taking - берущий, беря.\n2. Doing - делающий, делая.\n3. Taken - взятый.\n4. Done - сделанный."
         }
       ]
     },
@@ -177,11 +357,16 @@
       "call_back": "gerund",
       "questions": [
         {
-          "task": "",
-          "options":"Я не знаю.",
-          "question": [],
-          "answer": [],
-          "help": ""
+          "task": "В следующих предложениях замените придаточные дополнительные герундием с предлогом of.\n\nПРИМЕР: She would go to the country for the weekend.\nОТВЕТ:She thought of going to the country for the weekend.",
+          "question": ["I thought I would come and see you tomorrow.", "I am thinking that I shall go out to the country tomorrow.",
+            "I thought I would go on an excursion, but the weather is bad.", "So, are you thinking that you will buy some books, aren't you?",
+            "I thought I would work in the library this evening.", "We were thinking we would plant roses this year.",
+            "He is thinking that he would learn foreign languages in the nearest future."],
+          "answer": ["I thought of coming and seeing you tomorrow.", "I am thinking of going out to the country tomorrow.",
+            "I thought of going on an excursion, but the weather is bad.", "So, are you thinking of buying some books, aren't you?",
+            "I thought of working in the library this evening.", "We were thinking of planting roses this year.",
+            "He is thinking of learning foreign languages in the nearest future."],
+          "help": "Герундий — это неличная форма английского глагола с суффиксом -ing, соединяющая в себе черты существительного и глагола и несущая в себе оттенок значения некого процесса. "
         }
       ]
     },
@@ -190,11 +375,23 @@
       "call_back": "complex object",
       "questions": [
         {
-          "task": "",
-          "options":"Я не знаю.",
-          "question": [],
-          "answer": [],
-          "help": ""
+          "task": "Закончите предложения, употребив сложное дополнение.",
+          "question": ["The teacher said to the pupils:'Learn the rule.' - The teacher wanted ...",
+            "'Be careful, or else you will spill the milk,' said my mother to me. - My mother did not want ...",
+            "'My daughter will go to a ballet school,' said the woman. - The woman wanted ...",
+            "The man said:'My son will study mathematics.' - The man wanted ...",
+            "'Wait for me after school,' said Ann to me. - Ann wanted ...", "'Fix the shelf in the kitchen,' my father said to me. - My father wanted ...",
+            "'It will be very good if you study English,' said my brother to me. - My brother wanted ...",
+            "'Fetch me some water from the river, children,' said our grandmother. - Our grandmother wanted ...",
+            "'Come to my birthday party,' said Kate to her classmates. - Kate wanted ...",
+            "The biology teacher said to us:'Collect some insects in summer.' - The biology teacher wanted ...",
+            "'Dot't eat ice cream before dinner,' said our aunt to us. - Our aunt didn't want ...",
+            "'Come and live in St Petersburg with me,' said my mother to me. - My mother wanted ..."],
+          "answer": ["The pupils to learn the rule.", "Me to spill the milk.", "Her daughter to go to a ballet school.",
+            "His son to study mathematics.", "Me to wait for her after school.", "Me to fix the shelf in the kitchen.",
+            "Me to study English.", "Us to fetch her some water from the river.", "Her classmates to come to her birthday party.",
+            "Us to collect some insects in summer.", "Us to eat ice cream before dinner.", "Me to come and live in St Petersburg with her."],
+          "help": "Сложное дополнение - конструкция, схема образования которой такова: verb + object (noun или me/you/him/us) + infinitive (to или без to)/verb+ing.\n\nКонструкция Complex object с инфинитивом с частицей to употребляется после следующих глаголов:\nto want\nto expect\nwould like\nto know\nto order\nto tell\nto like\nto ask\nwould prefer"
         }
       ]
     },
@@ -203,11 +400,20 @@
       "call_back": "complex subject",
       "questions": [
         {
-          "task": "",
-          "options": "Я не знаю.",
-          "question": [],
-          "answer": [],
-          "help": ""
+          "task": "Перефразируйте следующие предложения, употребляя сложное подлежащее.\n\nПРИМЕР: We heard that a car stopped outside the door.\nОТВЕТ: A car was heard to stop outside the door.",
+          "question": ["People consider the climate there to be very healthy.", "It was announced that the Chinese dancers were arriving next week.",
+            "It is expected that the performance will be success.", "It is said that the book is popular with both old and young.",
+            "It is believed that the poem was written by an unknown soldier.", "It is supposed that the well-known playwright is working on a new play.",
+            "It is reported that the flood has caused severe damage to the crops.", "It was supposed that the crops would be rich that year,",
+            "It has been found that this mineral water is very good for the liver.", "Scientists consider that electricity exists throughout space.",
+            "It is said that the weather in Europe was exceedingly hot last summer.", "It was reported that five ships were missing after the battle."],
+          "answer": ["The climate there is considered to be very healthy.", "The Chinese dancers were announced to arrive next week.",
+            "The performance is expected to be success.", "The book is said to be popular with both old and young.",
+            "The poem is believed to have been written by an unknown soldier.", "The well-known playwright is supposed to be working on a new play.",
+            "The flood is reported to have caused severe damage to the crops.", "The crops were supposed to be rich that year.",
+            "This mineral water has been found to be very good for the liver.", "Electricity is considered to exist throughout space.",
+            "The weather in Europe is said to have been exceedingly hot last summer.", "Five ships were reported to be missing after the battle."],
+          "help": "Complex Subject = подлежащее (существительное в общем или местоимение в именительном падеже) + сказуемое (обычно глагол в пассивном залоге) + инфинитив."
         }
       ]
     },
@@ -216,24 +422,46 @@
       "call_back": "conditional",
       "questions": [
         {
-          "options": "Я не знаю.",
-          "task": "",
-          "question": [],
-          "answer": [],
-          "help": ""
-        }
-      ]
-    },
-    "wish": {
-      "name": "Коснтрукция 'I wish'",
-      "call_back": "wish",
-      "questions": [
+          "task": "Раскрывая скобки, напишите каждое предложение, образуя условные предложения I типа.",
+          "question": ["If you (to be) busy, I (to leave) you alone.", "If my friend (to come) to see me, I (to be) very glad.",
+            "If mother (to buy) a cake, we (to have) a very nice tea party.", "If he (to send) an e-mail, we (not to worry).",
+            "If you (not to work) systematically, you (to fail) the exam.", "If I (to live) in Moscow, I (to visit) the Tretyakov Art Gallery every year.",
+            "If I (to get) a ticket, I (to go) to the Philharmonic.", "If I (to live) near a forest, I (to gather) a lot of mushrooms.",
+            "If my father (to return) early, we (to watch) TV together.", "If she (to know) English, she (to try) to enter the university."],
+          "answer": ["If you are busy, I will leave you alone.", "If my friend comes to see me, I will be very glad.",
+            "If mother buys a cake, we will have a very nice tea party.", "If he sends an e-mail, we will not worry.",
+            "If you don't work systematically, you will fail the exam.", "If I live in Moscow, I will visit the Tretyakov Art Gallery every year.",
+            "If I get a ticket, I will go to the Philharmonic.", "If I live near a forest, I will gather a lot of mushrooms.",
+            "If my father returns early, we will watch TV together.", "If she knows English, she will try to enter the university."],
+          "help": "Условное предложение первого типа называют еще «реальным» условным, ведь оно показывает действие, которое с большой вероятностью случится, если выполнить условие. Такие предложения описывают ситуацию, которая произойдет в будущем времени.\n\nСхема построения: if + present simple (условие) -> future simple (результат)."
+        },
         {
-          "task": "",
-          "options": "Я не знаю.",
-          "question": [],
-          "answer": [],
-          "help": ""
+          "task": "Раскрывая скобки, напишите каждое предложение, образуя условные предложения II типа.",
+          "question": ["If you (to be) busy, I (to leave) you alone.", "If my friend (to come) to see me, I (to be) very glad.",
+            "If mother (to buy) a cake, we (to have) a very nice tea party.", "If he (to send) an e-mail, we (not to worry).",
+            "If you (not to work) systematically, you (to fail) the exam.", "If I (to live) in Moscow, I (to visit) the Tretyakov Art Gallery every year.",
+            "If I (to get) a ticket, I (to go) to the Philharmonic.", "If I (to live) near a forest, I (to gather) a lot of mushrooms.",
+            "If my father (to return) early, we (to watch) TV together.", "If she (to know) English, she (to try) to enter the university."],
+          "answer": ["If you were busy, I would leave you alone.", "If my friend came to see me, I would be very glad.",
+            "If mother bought a cake, we would have a very nice tea party.", "If he sent an e-mail, we would not worry.",
+            "If you didn't work systematically, you would fail the exam.", "If I lived in Moscow, I would visit the Tretyakov Art Gallery every year.",
+            "If I got a ticket, I would go to the Philharmonic.", "If I lived near a forest, I would gathered a lot of mushrooms.",
+            "If my father returned early, we would watch TV together.", "If she knew English, she would try to enter the university."],
+          "help": "Этот тип условных предложений называется «нереальным настоящим». Он показывает маловероятную или воображаемую ситуацию, которая относится к настоящему или будущему времени. Такая ситуация обычно не соответствует фактам в настоящем. То есть шанс того, что это действие произойдет, невелик, но не исключен совсем.\n\nСхема построения: if + past simple (условие) -> would + глагол без частицы to (результат)."
+        },
+        {
+          "task": "Раскрывая скобки, напишите каждое предложение, образуя условные предложения III типа.",
+          "question": ["If you (to be) busy, I (to leave) you alone.", "If my friend (to come) to see me, I (to be) very glad.",
+            "If mother (to buy) a cake, we (to have) a very nice tea party.", "If he (to send) an e-mail, we (not to worry).",
+            "If you (not to work) systematically, you (to fail) the exam.", "If I (to live) in Moscow, I (to visit) the Tretyakov Art Gallery every year.",
+            "If I (to get) a ticket, I (to go) to the Philharmonic.", "If I (to live) near a forest, I (to gather) a lot of mushrooms.",
+            "If my father (to return) early, we (to watch) TV together.", "If she (to know) English, she (to try) to enter the university."],
+          "answer": ["If you had been busy, I would have left you alone.", "If my friend had come to see me, I would have been very glad.",
+            "If mother had bought a cake, we would have had a very nice tea party.", "If he had sent an e-mail, we would not have worried.",
+            "If you hadn't worked systematically, you would have failed the exam.", "If I had lived in Moscow, I would have visited the Tretyakov Art Gallery every year.",
+            "If I had got a ticket, I would have gone to the Philharmonic.", "If I had lived near a forest, I would have gathered a lot of mushrooms.",
+            "If my father had returned early, we would have watch TV together.", "If she had known English, she would have tried to enter the university."],
+          "help": "Третий тип называется «нереальным прошлым». Всю его суть можно выразить одной фразой: сожаление о прошлом. Когда-то в прошлом что-то произошло, мы об этом сожалеем, но изменить событие уже не можем (если, конечно, не изобретут машину времени). Это единственный тип условных предложений, который относится к прошедшему времени.\n\nСхема построения: if + past perfect (условие) -> would have + 3-я форма глагола."
         }
       ]
     },
@@ -242,11 +470,15 @@
       "call_back": "modal",
       "questions": [
         {
-          "task": "",
-          "options": "Я не знаю.",
-          "question": [],
-          "answer": [],
-          "help": ""
+          "task": "Вставьте модальные глаголы may или can.",
+          "question": ["... you see anything in this inky darkness?", "You ... go when you have finished your essays.",
+            "Our train ... be late after the terrible snowstorms we've had.", "1. When ... you come and see me?",
+            "2. Let me see: I ... not come tomorrow, for I must be at the meeting, but on Sunday I'll find time.", "3. Yes, you ... expect me on Sunday about 2 o'clock.",
+            "You ... come in then you have taken off your boots.", "Be careful: you ... spill the milk if you carry it like that.",
+            "Most children ... slide on the ice very well.", "I don't think I ... be here by 11 o'clock tomorrow.",
+            "... you say that will happen in an hour?"],
+          "answer": ["Can", "May", "May", "Can", "Can", "Can", "May", "May", "Can", "Can", "Can"],
+          "help": "основная разница в том, что can обычно подразумевает физическую возможность что-то сделать, а may – разрешение, позволение. Иначе говоря “I can” похоже на “Я могу”, а “I may” похоже на “Мне можно”."
         }
       ]
     }
