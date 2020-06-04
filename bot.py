@@ -8,7 +8,7 @@ from collections import deque   # очередь для сообщений
 bot = telebot.TeleBot('1152483061:AAEb3U5qdlkuh_6oV9oplfCctZK6ERpvczE')    # это и есть наш бот, его токен
 
 # открываем json файл и вытаскиваем оттуда всю информацию
-f = codecs.open("game.json", "r", "utf_8_sig")
+f = codecs.open("game.json", "r", "utf_8")
 js = f.read()
 f.close()
 game = json.loads(js)
@@ -37,18 +37,17 @@ for call_back in game["themes"]:
 # обработка команды /start, кнопки с выбором темы
 @bot.message_handler(commands=['start'])
 def themes(m):
-    ci = m.chat.id
-    queue = deque()    # при нажатии /start формируется очередь
-    messages[ci] = queue    # записываем эту очередь отдельно в словарь
-    steps[ci] = {}    # создаём словарь для хранения прогресса каждого пользователя
-    for back in game["themes"]:    # в каждой теме ставим 0 номер блока и 0 номер вопроса
+    cid = m.chat.id
+    steps[cid] = {}   # создаём словарь для хранения прогресса каждого пользователя
+    messages[cid] = deque()
+    for back in game["themes"]:    # в каждой теме ставим 0 номер блока и 0 номер вопроса по умолчанию
         call = game["themes"][back]["call_back"]
-        steps[ci][call] = [0, 0]
+        steps[cid][call] = [0, 0]
     keyboard = types.InlineKeyboardMarkup()  # формируем выпадающие кнопки
     for i in range(13):
         key = types.InlineKeyboardButton(text=names[i], callback_data=call_backs[i])
         keyboard.add(key)
-    bot.send_message(ci, text='Выберите раздел, который хотите отточить:', reply_markup=keyboard)
+    bot.send_message(cid, text='Выберите раздел, который хотите отточить:', reply_markup=keyboard)
 
 
 # те же кнопки с выбором темы, но уже для использования внутри основного цикла, потому что там другой тип объекта
@@ -64,17 +63,23 @@ def for_themes(m):
 # что происходит, когда получаем какое-либо сообщение
 @bot.message_handler(content_types=['text'])
 def message_in(m):
-    a = m.text    # берём текст этого сообщения
+    print(m)
+    a = m.text  # берём текст этого сообщения
+    print("Text", a)
     ci = m.chat.id
-    messages[ci].append(a)    # добавляем текст в очередь первым (единственным, а значит, последним) элементом
+    queue = deque()
+    messages[ci] = queue
+    messages[ci].append(a)
+    print(messages)
+    bot.send_message(ci, a)  # добавляем текст в очередь первым (единственным, а значит, последним) элементом
 
 
 # извлекаем последний (он же первый) текст и возвращаем его
 def message_out(m):
-    ci = m.message.chat.id
-    while len(messages[ci]) == 0:    # ждём ответа пользователя
+    cid = m.message.chat.id
+    while len(messages[cid]) == 0:    # ждём ответа пользователя
         time.sleep(1)
-    k = messages[ci].popleft()    # извлекаем последний (он же первый) текст и обрабатываем
+    k = messages[cid].popleft()    # извлекаем последний (он же первый) текст и обрабатываем
     return k
 
 
@@ -95,6 +100,7 @@ def theme(m, tema):
     keyboard_end = types.InlineKeyboardMarkup()   # кнопка, которая появляется после решения всех заданий блока
     key_end = types.InlineKeyboardButton(text="\ud83c\udf6a", callback_data="end")
     keyboard_end.add(key_end)
+    print(messages)
     bl = steps[cid][tema][0]    # номер блока, в котором был задан последний вопрос
     for block in range(bl, len(game['themes'][tema]['questions'])):
         if choose_new_theme is True:    # а не сменить ли нам тему
@@ -108,8 +114,8 @@ def theme(m, tema):
             bot.send_message(cid, game['themes'][tema]['questions'][block]['task'] + '\n\n' +
                              game['themes'][tema]['questions'][block]['question'][question], reply_markup=keyboard)
             b = message_out(m)    # ждём ответ
-            while b.casefold().rstrip('.') != (game['themes'][tema]['questions'][block]['answer']
-                                               [question].casefold().rstrip('.')):
+            while b.lower().rstrip('.') != (game['themes'][tema]['questions'][block]['answer']
+                                            [question].lower().rstrip('.')):
                 # проверяем на соответствие, не обращая внимание на регистр
                 if b == "Нужна помощь.":    # проверям на соответствие надписям на кнопках
                     bot.send_message(cid, game['themes'][tema]['questions'][block]['help'])
@@ -145,52 +151,7 @@ def optionals(m):
 
     # если нажали кнопку "Артикли", здесь не используется функция т.к. нужны дополнительные кнопки на клавиатуре
     if m.data == 'articles':
-        cid = m.message.chat.id
-        choose_new_theme = False
-        keyboard = types.ReplyKeyboardMarkup(False, True)
-        keyboard.row('A', 'An', 'The', '_')  # первый ряд кнопок
-        keyboard.row('Нужна помощь.')
-        keyboard.row("Выбрать другую тему.")
-        keyboard_end = types.InlineKeyboardMarkup()
-        key_end = types.InlineKeyboardButton(text="\ud83c\udf6a", callback_data="end")
-        keyboard_end.add(key_end)
-        bl = steps[cid]['articles'][0]
-        for block in range(bl, len(game['themes']['articles']['questions'])):
-            if choose_new_theme is True:
-                break
-            qu = steps[cid]['articles'][1]
-            for question in range(qu, len(game['themes']['articles']['questions'][block]['question'])):
-                if choose_new_theme is True:
-                    break
-                steps[cid]['articles'][0] = block
-                steps[cid]['articles'][1] = question
-                bot.send_message(cid, game['themes']['articles']['questions'][block]['task'] + '\n\n' +
-                                 game['themes']['articles']['questions'][block]['question'][question],
-                                 reply_markup=keyboard)
-                b = message_out(m)
-                while b.casefold().rstrip('.') != (game['themes']['articles']['questions'][block]['answer']
-                                                   [question].casefold().rstrip('.')):
-                    if b == "Нужна помощь.":
-                        bot.send_message(cid, game['themes']['articles']['questions'][block]['help'])
-                        bot.send_message(cid,
-                                         "Попробуйте ещё раз." + "\n" + game['themes']['articles']['questions'][block]
-                                         ['task'] + '\n\n' + game['themes']['articles']['questions'][block]['question']
-                                         [question], reply_markup=keyboard)
-                        b = message_out(m)
-                    elif b == "Выбрать другую тему.":
-                        for_themes(m)
-                        choose_new_theme = True  # меняем состояние флага
-                        break
-                    else:
-                        bot.send_message(cid,
-                                         'Вы ошиблись. Попробуйте ещё раз.' + '\n' + game['themes']['articles']
-                                         ['questions'][block]['task'] + '\n\n' + game['themes']['articles']['questions']
-                                         [block]['question'][question], reply_markup=keyboard)
-                        b = message_out(m)
-
-        if choose_new_theme is False:
-            bot.send_message(cid, "Вы ответили на все имеющиеся вопросы по данной теме. Возьмите печеньку:)",
-                             reply_markup=keyboard_end)
+       theme(m, 'articles')
 
     # сюда будут приходить отклики после окончания любой из тем
     elif m.data == "end":
